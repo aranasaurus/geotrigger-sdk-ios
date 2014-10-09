@@ -1,0 +1,17 @@
+PODS:
+  - CocoaLumberjack (1.9.2):
+    - CocoaLumberjack/Extensions
+  - CocoaLumberjack/Core (1.9.2)
+  - CocoaLumberjack/Extensions (1.9.2):
+    - CocoaLumberjack/Core
+  - UIForLumberjack (1.0.2):
+    - CocoaLumberjack (~> 1.7)
+
+DEPENDENCIES:
+  - UIForLumberjack
+
+SPEC CHECKSUMS:
+  CocoaLumberjack: 205769c032b5fef85b92472046bcc8b7e7c8a817
+  UIForLumberjack: fbfcf74bc65593889ade7d683832f63c76b4c55f
+
+COCOAPODS: 0.33.1
