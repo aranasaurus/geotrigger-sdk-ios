@@ -8,6 +8,7 @@
 
 #import "GTSViewController.h"
 #import "GTSAppDelegate.h"
+#import "UIForLumberjack.h"
 #import <GeotriggerSDK/GeotriggerSDK.h>
 
 @interface GTSViewController ()
@@ -17,7 +18,6 @@
 @end
 
 @implementation GTSViewController
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -99,6 +99,10 @@
                                     failure:^(NSError *error) {
                                         NSLog(@"device/notify failed: %@", error.userInfo);
                                     }];
+}
+
+- (IBAction)showLog:(id)sender {
+    [[UIForLumberjack sharedInstance] showLogInView:self.view];
 }
 
 - (void)pushNotificationReceived {
